@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://andruha077.github.io/bachelor-ahp-project/sitemap.xml
