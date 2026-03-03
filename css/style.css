@@ -1,60 +1,162 @@
-:root {
-  --primary: #004d99;
-  --secondary: #00b300;
+/* ============================= */
+/* Reset */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* ============================= */
+/* Base Styles */
+/* ============================= */
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: linear-gradient(135deg, #e0f2f7, #c4e0e8);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* ============================= */
+/* Typography */
+/* ============================= */
+
 h1 {
-  text-align: center;
-  color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1a1a1a;
 }
 
 h2 {
-  color: var(--primary);
-  border-left: 4px solid var(--secondary);
-  padding-left: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #2c3e50;
 }
 
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* ============================= */
+/* Links */
+/* ============================= */
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ============================= */
+/* Button */
+/* ============================= */
+
 button {
-  padding: 12px 20px;
-  background: var(--primary);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #0077cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background: #003366;
+    background-color: #005fa3;
 }
+
+/* ============================= */
+/* Result Block */
+/* ============================= */
 
 #result {
-  margin-top: 20px;
-  font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef3f8;
+    border-radius: 5px;
+    min-height: 40px;
 }
 
-/* Адаптивність */
-img {
-  max-width: 100%;
-  height: auto;
+/* ============================= */
+/* Horizontal Line */
+/* ============================= */
+
+hr {
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
 }
+
+/* ============================= */
+/* Responsive Images */
+/* ============================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+/* ============================= */
+/* Mobile Adaptation */
+/* ============================= */
 
 @media (max-width: 768px) {
-  .container {
-    padding: 15px;
-  }
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    #result {
+        font-size: 14px;
+    }
 }
