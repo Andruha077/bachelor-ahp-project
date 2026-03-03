@@ -10,20 +10,26 @@
     <meta name="description" content="Інтерактивна система підтримки прийняття рішень методом аналізу ієрархій (МАІ).">
     <meta name="keywords" content="МАІ, AHP, прийняття рішень, бакалаврська робота">
     <meta name="author" content="Andriy Barodych">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://andruha077.github.io/bachelor-ahp-project/">
 
-    
+    <!-- Open Graph -->
     <meta property="og:title" content="Моделювання вибору дезодоранту методом МАІ">
     <meta property="og:description" content="Інтерактивна система прийняття рішень на основі методу аналізу ієрархій.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://andruha077.github.io/bachelor-ahp-project/">
+    <meta property="og:image" content="https://andruha077.github.io/bachelor-ahp-project/preview.jpg">
     <meta property="og:locale" content="uk_UA">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ScholarlyArticle",
-      "name": "Моделювання вибору дезодоранту методом аналізу ієрархій",
+      "headline": "Моделювання вибору дезодоранту методом аналізу ієрархій",
       "author": {
         "@type": "Person",
         "name": "Andriy Barodych"
@@ -41,51 +47,69 @@
 <main class="container" role="main">
 
     <header>
-        <h1>Моделювання вибору дезодоранту методом аналізу ієрархій</h1>
+        <h1 id="main-title">Моделювання вибору дезодоранту методом аналізу ієрархій</h1>
     </header>
 
-    <section>
-        <h2>Короткий опис</h2>
+    <section aria-labelledby="about-section">
+        <h2 id="about-section">Короткий опис</h2>
         <p>
             Веб-система підтримки прийняття рішень на основі методу аналізу ієрархій (МАІ) 
             для вибору оптимальної альтернативи.
         </p>
+    </section>
 
-        <h2>Мета дослідження</h2>
+    <section aria-labelledby="goal-section">
+        <h2 id="goal-section">Мета дослідження</h2>
         <p>
             Розробити інтерактивну систему підтримки прийняття рішень із використанням методу МАІ.
         </p>
+    </section>
 
-        <h2>Основні завдання</h2>
+    <section aria-labelledby="tasks-section">
+        <h2 id="tasks-section">Основні завдання</h2>
         <ul>
             <li>Проаналізувати метод аналізу ієрархій</li>
             <li>Реалізувати алгоритм обчислення ваг</li>
             <li>Забезпечити перевірку узгодженості</li>
             <li>Розробити зручний веб-інтерфейс</li>
         </ul>
+    </section>
 
-        <h2>Очікувані результати</h2>
+    <section aria-labelledby="results-section">
+        <h2 id="results-section">Очікувані результати</h2>
         <p>
             Отримання математично обґрунтованого вибору альтернативи.
         </p>
+    </section>
 
-        <h2>Контактна інформація</h2>
-        <p>Email: <a href="mailto:andriy001@gmail.com">andriy001@gmail.com</a></p>
+    <section aria-labelledby="contact-section">
+        <h2 id="contact-section">Контактна інформація</h2>
+        <p>Email: 
+            <a href="mailto:andriy001@gmail.com" aria-label="Написати листа на електронну пошту">
+                andriy001@gmail.com
+            </a>
+        </p>
     </section>
 
     <hr>
 
-    <section id="app">
+    <section id="app" aria-labelledby="app-section">
+        <h2 id="app-section">Розрахунок методом МАІ</h2>
+
         <button 
             onclick="calculateAHP()" 
             aria-label="Розрахувати оптимальний вибір методом МАІ">
             Розрахувати
         </button>
 
-        <div id="result" aria-live="polite"></div>
+        <div id="result" aria-live="polite" role="status"></div>
     </section>
 
 </main>
+
+<footer role="contentinfo">
+    <p>© 2026 Andriy Barodych. Бакалаврська робота.</p>
+</footer>
 
 <script src="js/app.js"></script>
 </body>
