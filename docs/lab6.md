@@ -182,7 +182,6 @@ Sequence diagram показує взаємодію між об'єктами си
 
 ```mermaid
 graph TD
-
 User[Користувач]
 
 User --> A[Ввести критерії]
@@ -200,8 +199,41 @@ System --> D
 
 ---
 
-## Список використаних джерел
+# 3. Друга діаграма
 
-1. UML Diagrams. URL: https://www.uml-diagrams.org  
-2. BPMN Specification. URL: https://www.omg.org/bpmn  
+## Component Diagram (UML)
+
+### Чому обрано
+
+Component diagram була обрана тому, що вона дозволяє показати архітектуру системи та взаємодію між основними компонентами веб-застосунку AHP.
+
+Діаграма допомагає зрозуміти, з яких частин складається система та як вони взаємодіють між собою.
+
+---
+
+## Діаграма компонентів системи
+
+```mermaid
+graph TD
+
+User[Користувач]
+
+Frontend[Web Interface]
+Backend[Application Server]
+Algorithm[AHP Algorithm Module]
+Database[(Database)]
+
+User --> Frontend
+Frontend --> Backend
+Backend --> Algorithm
+Backend --> Database
+Algorithm --> Database
+```
+
+---
+
+# Список використаних джерел
+
+1. UML Diagrams. URL: https://www.uml-diagrams.org
+2. BPMN Specification. URL: https://www.omg.org/bpmn
 3. Mermaid Documentation. URL: https://mermaid.js.org
