@@ -16,6 +16,7 @@
 - документація системи
 - діаграми архітектури та процесів
 
+
 ---
 
 # 1. Альтернативи діаграм
@@ -232,8 +233,43 @@ Algorithm --> Database
 
 ---
 
+# 4. Третя діаграма
+
+## Data Flow Diagram (DFD)
+
+### Чому обрано
+
+DFD була обрана тому, що вона дозволяє показати рух даних у системі підтримки прийняття рішень.  
+Ця діаграма демонструє, як дані передаються від користувача до системи, обробляються алгоритмом AHP та зберігаються у базі даних.
+
+DFD допомагає зрозуміти логіку обробки інформації та потоки даних між основними компонентами системи.
+
+---
+
+## Діаграма потоків даних
+
+```mermaid
+graph TD
+
+User[Користувач]
+
+Input[Введення критеріїв та альтернатив]
+Process[AHP обчислення]
+DB[(База даних)]
+Result[Результат вибору альтернатив]
+
+User --> Input
+Input --> Process
+Process --> DB
+DB --> Process
+Process --> Result
+Result --> User
+```
+
+---
+
 # Список використаних джерел
 
-1. UML Diagrams. URL: https://www.uml-diagrams.org
-2. BPMN Specification. URL: https://www.omg.org/bpmn
+1. UML Diagrams. URL: https://www.uml-diagrams.org  
+2. BPMN Specification. URL: https://www.omg.org/bpmn  
 3. Mermaid Documentation. URL: https://mermaid.js.org
