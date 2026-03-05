@@ -130,8 +130,6 @@ Activity diagram показує послідовність виконання д
 
 # 2. Реалізація діаграми
 
-Для проекту було обрано **Use Case Diagram**, оскільки вона дозволяє показати взаємодію користувача з системою підтримки прийняття рішень.
-
 ## Діаграма Use Case
 
 ```mermaid
@@ -150,11 +148,12 @@ A --> System
 B --> System
 C --> System
 System --> D
+```
 
-Список використаних джерел
+---
 
-UML Diagrams. URL: https://www.uml-diagrams.org
+# Список використаних джерел
 
-BPMN Specification. URL: https://www.omg.org/bpmn
-
-Mermaid Documentation. URL: https://mermaid.js.org
+1. UML Diagrams. URL: https://www.uml-diagrams.org  
+2. BPMN Specification. URL: https://www.omg.org/bpmn  
+3. Mermaid Documentation. URL: https://mermaid.js.org
