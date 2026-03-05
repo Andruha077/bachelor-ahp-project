@@ -6,7 +6,13 @@ require_once 'includes/ErrorHandler.php';
 set_exception_handler(['ErrorHandler', 'handleException']);
 
 $logger = AppLogger::getLogger();
+
 $logger->info("Application started");
+
+$logger->info("User action", [
+    'ip' => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
+    'url' => $_SERVER['REQUEST_URI'] ?? 'unknown'
+]);
 
 ?>
 
