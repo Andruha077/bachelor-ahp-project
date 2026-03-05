@@ -1,6 +1,9 @@
 <?php
 
 require_once 'includes/logger.php';
+require_once 'includes/ErrorHandler.php';
+
+set_exception_handler(['ErrorHandler', 'handleException']);
 
 $logger = AppLogger::getLogger();
 $logger->info("Application started");
